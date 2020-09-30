@@ -1,29 +1,38 @@
 @media screen and (max-width: 600px){
-
+    .container-fast, .container-boulangerie, .container-restaurant, .container-bar, .container-cinema, .container-salledesport, .container-meetup, .container-hackathon, .container-pharmacie, .container-parking{
+        display: flex;
+        flex-direction: column;
+    }
+    img{
+        width: 100%;
+    }
 }
+
+@media screen and (min-width: 1080px){
+    img{
+        width: 250px;
+    }
+}
+
 
 *{
     margin: 0;
     padding: 0;
+    max-width: 100%;
 }
+
+/************************************** Debut Title ***********************************/
+
+h1, h2{
+    display: flex;
+    justify-content: center;
+    margin: 40px;
+}
+
+/************************************** Fin Title ***********************************/
 
 /**************************************** Debut Card ***********************************/
 
-.container-manger{
-    background-image: url("https://via.placeholder.com/1000x150");
-}
-
-.container-divertir{
-    background-image: url("https://via.placeholder.com/1000x150");
-}
-
-.container-informer{
-    background-image: url("https://via.placeholder.com/1000x150");
-}
-
-.container-utiles{
-    background-image: url("https://via.placeholder.com/1000x150");
-}
 
 .container-fast, .container-boulangerie, .container-restaurant, .container-bar, .container-cinema, .container-salledesport, .container-meetup, .container-hackathon, .container-pharmacie, .container-parking{
     display: flex;
@@ -36,12 +45,8 @@
     background-color: white;
 }
 
-img{
-    width: 225px;
-}
-
 button{
-     width: 100%;
+    width: 100%;
     background-color: white;
     border-style: none;
     border-radius: 10px;
@@ -147,3 +152,23 @@ button{
 }
 
 /************************************ Fin popup pour plus d'information ***************************/
+
+/************************************ Debut footer ***************************/
+
+footer{
+    background-color: black;
+}
+
+.other{
+    color: white;
+    display: inline;
+    margin-left: 10%;
+}
+
+footer a, p{
+    text-decoration: none;
+    color: white;
+    display: inline;
+}
+
+/************************************ Fin footer ***************************/
