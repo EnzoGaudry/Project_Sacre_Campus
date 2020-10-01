@@ -1,25 +1,42 @@
-@media screen and (max-width: 600px){
-    .container-fast, .container-boulangerie, .container-restaurant, .container-bar, .container-cinema, .container-salledesport, .container-meetup, .container-hackathon, .container-pharmacie, .container-parking{
-        display: flex;
-        flex-direction: column;
-    }
-    img{
-        width: 100%;
-    }
-}
-
-@media screen and (min-width: 1080px){
-    img{
-        width: 250px;
-    }
-}
-
-
 *{
     margin: 0;
     padding: 0;
     max-width: 100%;
 }
+
+@media screen and (max-width: 600px){
+    .container-rapide, .container-boulangerie, .container-restaurant, .container-bar, .container-cinema, .container-salledesport, .container-meetup, .container-hackathon, .container-pharmacie, .container-parking{
+        display: flex;
+        flex-direction: column;
+    }
+    img{
+        width: 100%;
+        height: auto;
+    }
+
+    .card{
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@media screen and (min-width: 1024px){
+    .card{
+        width: 25%;
+        height: 100%;
+    }
+
+    img{
+        width: 100%;
+        height: 250px;
+    }
+
+    button{
+        display: flex;
+        justify-content: center;
+    }
+}
+
 
 /************************************** Debut Title ***********************************/
 
@@ -34,7 +51,7 @@ h1, h2{
 /**************************************** Debut Card ***********************************/
 
 
-.container-fast, .container-boulangerie, .container-restaurant, .container-bar, .container-cinema, .container-salledesport, .container-meetup, .container-hackathon, .container-pharmacie, .container-parking{
+.container-rapide, .container-boulangerie, .container-restaurant, .container-bar, .container-cinema, .container-salledesport, .container-meetup, .container-hackathon, .container-pharmacie, .container-parking{
     display: flex;
     justify-content: space-around;
 }
