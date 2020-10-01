@@ -90,13 +90,14 @@ nav a {
     }
 
 
-   
 @media(max-width: 640px) {
 
 .menu {
         display:flex;
         flex-direction: column;
-        margin-right: 15px ;
+        margin-right: 15
+        
+        gpx ;
     }
 }
     
