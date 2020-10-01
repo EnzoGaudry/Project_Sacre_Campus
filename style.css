@@ -41,8 +41,16 @@ h1, h2{
 
 .card{
     border-radius: 10px;
-    border-style: solid;
     background-color: white;
+    box-shadow: -15px -15px 15px rgba(255,255,255,0.5);
+    box-shadow: 15px 15px 15px rgba(0,0,0,0.3);
+    transition: .3s ease-in-out;
+    margin: 2%;
+}
+
+.card:hover{
+    transform: scale(1.1);
+    transition: .3s ease-in-out;
 }
 
 button{
@@ -66,7 +74,7 @@ button{
     height: 100vh;
     bottom: 0;
     right: 0;
-    background-color: grey;
+    background-color: rgba(0, 0, 0, 0.7);
     z-index: 2;
     visibility: hidden;
     opacity: 0;
