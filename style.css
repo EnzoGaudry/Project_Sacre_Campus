@@ -5,7 +5,7 @@
 }
 
 @media screen and (max-width: 600px){
-    .container-fast, .container-boulangerie, .container-restaurant, .container-bar, .container-cinema, .container-salledesport, .container-meetup, .container-hackathon, .container-pharmacie, .container-parking{
+    .container-rapide, .container-boulangerie, .container-restaurant, .container-bar, .container-cinema, .container-salledesport, .container-meetup, .container-hackathon, .container-pharmacie, .container-parking{
         display: flex;
         flex-direction: column;
     }
@@ -51,7 +51,7 @@ h1, h2{
 /**************************************** Debut Card ***********************************/
 
 
-.container-fast, .container-boulangerie, .container-restaurant, .container-bar, .container-cinema, .container-salledesport, .container-meetup, .container-hackathon, .container-pharmacie, .container-parking{
+.container-rapide, .container-boulangerie, .container-restaurant, .container-bar, .container-cinema, .container-salledesport, .container-meetup, .container-hackathon, .container-pharmacie, .container-parking{
     display: flex;
     justify-content: space-around;
 }
