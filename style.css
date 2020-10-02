@@ -85,29 +85,28 @@ nav a {
     display: flex; 
     flex-basis: calc(50% - 40px);  
     justify-content: center;
-    }
+}
 
-    .miniLogo img{
-        margin-top: auto;
+.miniLogo img{
+    margin-top: auto;
         
-    }
+}
 
 
-    button{
-        justify-content: center;
-        display: flex;
-        
-    }
+button{
+    justify-content: center;
+    display: flex;  
+}
 
-    .campus{
-        padding-top: 10px;
-        width: 80%;
-    }
+.campus{
+    padding-top: 10px;
+    width: 80%;
+}
                 
-    .logo {
-        text-align: center;
-        border : black , 5px ;
-    }
+.logo {
+    text-align: center;
+    border : black , 5px ;
+}
 
 
 nav a {
