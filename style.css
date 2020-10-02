@@ -7,16 +7,17 @@ html, body {
 * {
     margin : 0;
     padding : 0;
+    
 }
 
     
 
 @font-face { 	
-    font-family: "Spicyburger"; 	src: url('../font/Spicyburger.ttf'); }
+    font-family: "Spicyburger"; 	src: url('./font/Spicyburger.otf'); }
 
 
     nav {
-        background-image: url(images/background.jpg);
+        background-image: url(./picture/background.jpg);
 
             }
 
