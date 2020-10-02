@@ -10,29 +10,27 @@
 
     <!---------------------------------------------- Navbar ------------------------------>
 
-    <nav class="nav" role="navigation">
+    <nav class="nav" role="navigation" id="top">
         <div class=logo>
-        <figure><img src="images/logo_wild2.png" alt="logo Wild" class="campus"></figure> 
-        
+        <figure><img src="./picture/logo_wild2.png" alt="logo Wild" class="campus"></figure>
         </div>
         <div class=menu>
-                <div class=miniLogo><img src="images/miniLogo1.png" alt="miniLogos1">
-                <a href="#">Se restaurer</a></div>
-                <div class=miniLogo><img src="images/miniLogo2.png" alt="miniLogos2">
-                    <a href="#">-Se divertir</a></div>
+                <div class=miniLogo><img src="./picture/miniLogo1.png" alt="miniLogos1">
+                <a href="#manger">Se Restaurer</a></div>
+                <div class=miniLogo><img src="./picture/miniLogo2.png" alt="miniLogos2">
+                <a href="#divertir">Se Divertir</a></div>
             
-                <div class=miniLogo><img src="images/miniLogo3.png" alt="miniLogos2">
-                <a href="#">--S'informer   </a></div>
-                <div class=miniLogo><img src="images/miniLogo4.png" alt="miniLogos2">
-                <a href="#">Lieux utiles</a></div>
+                <div class=miniLogo><img src="./picture/miniLogo3.png" alt="miniLogos2">
+                <a href="#informer">S'informer</a></div>
+                <div class=miniLogo><img src="./picture/miniLogo4.png" alt="miniLogos2">
+                <a href="#utiles">Lieux Utiles</a></div>
         </div>
-    
-</br></br>></br></br>>
+    </br>
     </nav>
 
     <!---------------------------------------------- Debut container manger ------------------------------>
 
-    <div class="container-manger">
+    <div class="container-manger" id="manger">
         <h1>Se restaurer</h1>
         <div class="container-card-manger">
             <!---------------------------------------------- Debut container rapide ------------------------------>
@@ -139,7 +137,7 @@
 
       <!---------------------------------------------- Debut container divertir ------------------------------>
 
-    <div class="container-divertir">
+    <div class="container-divertir" id="divertir">
         <h1>Se divertir</h1>
         <div class="container-card-divertir">
             <!---------------------------------------------- Debut container bar ------------------------------>
@@ -251,7 +249,7 @@
 
       <!---------------------------------------------- Debut container informer ------------------------------>
 
-    <div class="container-informer">
+    <div class="container-informer" id="informer">
         <h1>S'informer</h1>
         <div class="container-card-informer">
              <!---------------------------------------------- Debut container meetup ------------------------------>
@@ -267,10 +265,18 @@
                 </div>
                 <div class="card">
                     <div class="img">
-                        <img src="./picture/Sacrétech.png" alt="">
+                        <img src="./picture/saintex.png" alt="">
                     </div>
                     <form action="#sacreetech">
                         <button type="submit">Sacree Tech <br> Plus d'infos</button>
+                    </form>
+                </div>
+                <div class="card">
+                    <div class="img">
+                        <img src="./picture/Sacrétech.png" alt="">
+                    </div>
+                    <form action="#saintex">
+                        <button type="submit">Saint-Ex <br> Plus d'infos</button>
                     </form>
                 </div>
             </div>
@@ -303,7 +309,7 @@
 
       <!---------------------------------------------- Debut container utiles ------------------------------>
 
-    <div class="container-utiles">
+    <div class="container-utiles" id="utiles">
         <h1>Tous les lieux utiles</h1>
         <div class="container-card-utiles">
              <!---------------------------------------------- Debut container informer ------------------------------>
@@ -326,7 +332,7 @@
             <h2>Pharmacie</h2>
             <div class="container-pharmacie">
                 <div class="card">
-                    <img src="https://www.pagesjaunes.fr/media/fcp/06233430-d55dff871f2a07264cc23e56df7e53c7" alt="">
+                    <img src="./picture/pharmacie_godfroy.jpg" alt="">
                     <form action="#pharmacie">
                         <button type="submit">Pharmacie Godfroy <br> Plus d'infos</button>
                     </form>
@@ -335,13 +341,502 @@
         </div>
     </div>
 
+
     <!---------------------------------------------- Debut container Popup ------------------------------>
 
     <div class="popup" id="fast">
         <div class="popup-inner">
-            <a class="popup-close" href="#">X</a>
+            <a class="popup-close" href="#manger">X</a>
             <div class="popup-text">
                 <h1>Le Fast</h1>
-    
+                <p> 
+                    Adresse : 49 Rue De Courcelles, 51100, Reims </br>
+                    Numéro :  03 26 02 02 94 </br>
+                   Site Web : https://www.facebook.com/RestaurantLeFast/ </br>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="popup" id="subway">
+        <div class="popup-inner">
+            <a class="popup-close" href="#manger">X</a>
+            <div class="popup-text">
+                <h1>Subway</h1>
+                <p>
+                    Adresse: </br>
+                    Numéro : </br>
+                    Site Web :
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="popup" id="mcdo">
+        <div class="popup-inner">
+            <a class="popup-close" href="#manger">X</a>
+            <div class="popup-text">
+                <h1>McDo</h1>
+                <p>
+                    Adresse: </br>
+                    Numéro : </br>
+                    Site Web :
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="popup" id="gare">
+        <div class="popup-inner">
+            <a class="popup-close" href="#manger">X</a>
+            <div class="popup-text">
+                <h1>Boulangerie de la Gare</h1>
+                <p>
+                    Adresse: </br>
+                    Numéro : </br>
+                    Site Web :
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="popup" id="waida">
+        <div class="popup-inner">
+            <a class="popup-close" href="#manger">X</a>
+            <div class="popup-text">
+                <h1>Waida et Fils</h1>
+                <p>
+                    Adresse: </br>
+                    Numéro : </br>
+                    Site Web :
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="popup" id="fischer">
+        <div class="popup-inner">
+            <a class="popup-close" href="#manger">X</a>
+            <div class="popup-text">
+                <h1>Fischer</h1>
+                <p>
+                    Adresse: </br>
+                    Numéro : </br>
+                    Site Web :
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="popup" id="sacre">
+        <div class="popup-inner">
+            <a class="popup-close" href="#manger">X</a>
+            <div class="popup-text">
+                <h1>Sacre Burger</h1>
+                <p>
+                    Adresse: </br>
+                    Numéro : </br>
+                    Site Web :
+                    
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="popup" id="231east">
+        <div class="popup-inner">
+            <a class="popup-close" href="#manger">X</a>
+            <div class="popup-text">
+                <h1>231 East</h1>
+                <p>
+                    Adresse: </br>
+                    Numéro : </br>
+                    Site Web :
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="popup" id="shinzen">
+        <div class="popup-inner">
+            <a class="popup-close" href="#manger">X</a>
+            <div class="popup-text">
+                <h1>Shin Zen</h1>
+                <p>
+                    Adresse: </br>
+                    Numéro : </br>
+                    Site Web :
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="popup" id="cookhouse">
+        <div class="popup-inner">
+            <a class="popup-close" href="#manger">X</a>
+            <div class="popup-text">
+                <h1>CookHouse</h1>
+                <p>
+                    Adresse: </br>
+                    Numéro : </br>
+                    Site Web :
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="popup" id="koboon">
+        <div class="popup-inner">
+            <a class="popup-close" href="#manger">X</a>
+            <div class="popup-text">
+                <h1>Koboon</h1>
+                <p>
+                    Adresse: </br>
+                    Numéro : </br>
+                    Site Web :
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="popup" id="ronroncafe">
+        <div class="popup-inner">
+            <a class="popup-close" href="#manger">X</a>
+            <div class="popup-text">
+                <h1>Ronroncafe</h1>
+                <p>
+                    Adresse: </br>
+                    Numéro : </br>
+                    Site Web :
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="popup" id="229bar">
+        <div class="popup-inner">
+            <a class="popup-close" href="#divertir">X</a>
+            <div class="popup-text">
+                <h1>229 Bar Gaming</h1>
+                <p>
+                    Adresse: </br>
+                    Numéro : </br>
+                    Site Web :
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="popup" id="kilberry">
+        <div class="popup-inner">
+            <a class="popup-close" href="#divertir">X</a>
+            <div class="popup-text">
+                <h1>Kileberry</h1>
+                <p>
+                    Adresse: </br>
+                    Numéro : </br>
+                    Site Web :
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="popup" id="triangle">
+        <div class="popup-inner">
+            <a class="popup-close" href="#divertir">X</a>
+            <div class="popup-text">
+                <h1>Triangle Sweet Corner</h1>
+                <p>
+                    Adresse: </br>
+                    Numéro : </br>
+                    Site Web :
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="popup" id="fut">
+        <div class="popup-inner">
+            <a class="popup-close" href="#divertir">X</a>
+            <div class="popup-text">
+                <h1>Au Fut et a Mesure</h1>
+                <p>
+                    Adresse: </br>
+                    Numéro : </br>
+                    Site Web :
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="popup" id="antirouille">
+        <div class="popup-inner">
+            <a class="popup-close" href="#divertir">X</a>
+            <div class="popup-text">
+                <h1>L'antirouille</h1>
+                <p>
+                    Adresse: </br>
+                    Numéro : </br>
+                    Site Web :
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="popup" id="torboyo">
+        <div class="popup-inner">
+            <a class="popup-close" href="#divertir">X</a>
+            <div class="popup-text">
+                <h1>Torboyo</h1>
+                <p>
+                    Adresse: </br>
+                    Numéro : </br>
+                    Site Web :
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="popup" id="market">
+        <div class="popup-inner">
+            <a class="popup-close" href="#divertir">X</a>
+            <div class="popup-text">
+                <h1>The Market Brewhouse</h1>
+                <p>
+                    Adresse: </br>
+                    Numéro : </br>
+                    Site Web :
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="popup" id="delirium">
+        <div class="popup-inner">
+            <a class="popup-close" href="#divertir">X</a>
+            <div class="popup-text">
+                <h1>Delirium Cafe</h1>
+                <p>
+                    Adresse: </br>
+                    Numéro : </br>
+                    Site Web :
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="popup" id="musikall">
+        <div class="popup-inner">
+            <a class="popup-close" href="#divertir">X</a>
+            <div class="popup-text">
+                <h1>Musikall Bar Karaoke Box</h1>
+                <p>
+                    Adresse: </br>
+                    Numéro : </br>
+                    Site Web :
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="popup" id="gaumont">
+        <div class="popup-inner">
+            <a class="popup-close" href="#divertir">X</a>
+            <div class="popup-text">
+                <h1>Gaumont</h1>
+                <p>
+                    Adresse: </br>
+                    Numéro : </br>
+                    Site Web :
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="popup" id="opera">
+        <div class="popup-inner">
+            <a class="popup-close" href="#divertir">X</a>
+            <div class="popup-text">
+                <h1>Opera</h1>
+                <p>
+                    Adresse: </br>
+                    Numéro : </br>
+                    Site Web :
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="popup" id="espaceclub">
+        <div class="popup-inner">
+            <a class="popup-close" href="#divertir">X</a>
+            <div class="popup-text">
+                <h1>Espace Club</h1>
+                <p>
+                    Adresse: </br>
+                    Numéro : </br>
+                    Site Web :
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="popup" id="gts">
+        <div class="popup-inner">
+            <a class="popup-close" href="#divertir">X</a>
+            <div class="popup-text">
+                <h1>GTS Reims</h1>
+                <p>
+                    Adresse: </br>
+                    Numéro : </br>
+                    Site Web :
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="popup" id="js">
+        <div class="popup-inner">
+            <a class="popup-close" href="#informer">X</a>
+            <div class="popup-text">
+                <h1>JS Don't Panic</h1>
+                <p>
+                    Adresse: </br>
+                    Numéro : </br>
+                    Site Web :
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="popup" id="saintex">
+        <div class="popup-inner">
+            <a class="popup-close" href="#informer">X</a>
+            <div class="popup-text">
+                <h1>Saint-Ex</h1>
+                <p>
+                    Adresse: </br>
+                    Numéro : </br>
+                    Site Web :
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="popup" id="sacreetech">
+        <div class="popup-inner">
+            <a class="popup-close" href="#informer">X</a>
+            <div class="popup-text">
+                <h1>Sacree Tech</h1>
+                <p>
+                    Adresse: </br>
+                    Numéro : </br>
+                    Site Web :
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="popup" id="">
+        <div class="popup-inner">
+            <a class="popup-close" href="#informer">X</a>
+            <div class="popup-text">
+                <h1></h1>
+                <p>
+                    Adresse: </br>
+                    Numéro : </br>
+                    Site Web :
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="popup" id="">
+        <div class="popup-inner">
+            <a class="popup-close" href="#informer">X</a>
+            <div class="popup-text">
+                <h1>Le Fast</h1>
+                <p>
+                    Adresse: </br>
+                    Numéro : </br>
+                    Site Web :
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="popup" id="">
+        <div class="popup-inner">
+            <a class="popup-close" href="#informer">X</a>
+            <div class="popup-text">
+                <h1>Le Fast</h1>
+                <p>
+                    Adresse: </br>
+                    Numéro : </br>
+                    Site Web :
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="popup" id="">
+        <div class="popup-inner">
+            <a class="popup-close" href="#utiles">X</a>
+            <div class="popup-text">
+                <h1>Le Fast</h1>
+                <p>
+                    Adresse: </br>
+                    Numéro : </br>
+                    Site Web :
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="popup" id="">
+        <div class="popup-inner">
+            <a class="popup-close" href="#utiles">X</a>
+            <div class="popup-text">
+                <h1>Le Fast</h1>
+                <p>
+                    Adresse: </br>
+                    Numéro : </br>
+                    Site Web :
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="popup" id="pharmacie">
+        <div class="popup-inner">
+            <a class="popup-close" href="#utiles">X</a>
+            <div class="popup-text">
+                <h1>Pharmacie Godfroy</h1>
+                <p>
+                    Adresse: </br>
+                    Numéro : </br>
+                    Site Web :
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+    <!---------------------------------------------- Fin container Popup ------------------------------>
+
+
+    <footer>
+            <p>Created by :</p>
+            <a href="https://www.linkedin.com/in/olivier-preaux-b492b31b8/">Olivier</a>
+            <a href="https://www.linkedin.com/in/adrien-thouvenin-a42b101a2/">Adrien</a>
+            <a href="https://www.linkedin.com/in/enzogaudry/">Enzo</a>
+            <div class="other">
+                <a href="https://www.wildcodeschool.com/fr-FR">Wild Code School</a>
+            </div>
+    </footer>
+
+
+    <a href="#top" class="back-to-top">Top</a>
+
 </body>
 </html>
