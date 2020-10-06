@@ -1,131 +1,102 @@
-html, body {
-    height: 100%;
-    margin: 0;
-    background-color: #d8d8d8;
-  }
-
   *{
     margin: 0;
     padding: 0;
-    max-width: 100%;
     scroll-behavior: smooth;
+    font-family: font;
+    color: #007e8a;
 }
 
-    
-
-@font-face { 	
-    font-family: "Spicyburger"; 	src: url('./font/Spicyburger.otf'); }
-
-
-    nav {
-        background-image: url(./picture/background.jpg);
-
-            }
-
-            img{
-                margin-bottom: 5px;
-                border-top-left-radius: 10px;
-                border-top-right-radius: 10px;
-            }
-
-            .campus{
-                padding-top: 10px;
-                width: 100%;
-            }
-            
-    .logo {
-        opacity: 0.95;
-        padding-left : 10px;
-        padding-top: 10px;
-        padding-right : 10px;
-        text-align: center;
-        margin-left: auto ;
-        margin-right: auto ;
-        max-height: 100% ;
-        width: auto ;
-        border : black , 5px ;
-        }
-
-.miniLogo {
-    list-style:none;
-    background: linear-gradient( rgb(148, 144, 144),#0f0f0f);
-    box-shadow: 0 1px 3px rgba(0, 0, 0, .3),
-                0 3px 5px rgba(0, 0, 0, .2),
-                0 5px 10px rgba(0, 0, 0, .2),
-                0 20px 20px rgba(0, 0, 0, .15);
-    border: 4px solid #dacdcd ;
-    border-radius: 10px; 
-    margin-bottom: 5px;
+body{
+    background-color: #ffeae4;
 }
 
-  
+@font-face{
+    font-family: font;
+    src: url(./font/Champagne\ &\ Limousines.ttf);
+}
 
-
-nav a {
-    color : white ;
-    font-family: "Spicyburger", serif;
-    font-size: 3em ;
-    font-weight : bold ;
-    padding: 0.5em;  
-    text-decoration: none;
-    margin-bottom: 10px;
-    
+@keyframes flash{
+    from{
+        text-shadow: none;
     }
 
-
-
-    .menu {
-        display: flex;
-        justify-content: space-around;
-        flex-wrap: wrap;
-        flex-direction: row;
+    50%{
+        text-shadow: #007e8a 0px 0px 5px, #007e8a 0px 0px 10px, #007e8a 0px 0px 15px, #007e8a 0px 0px 20px, #007e8a 0px 0px 30px, #007e8a 0px 0px 40px, #FF2D95 0px 0px 50px, #007e8a 0px 0px 75px;
     }
-    
-.menu > div {
-    display: flex; 
-    flex-basis: calc(50% - 40px);  
-    justify-content: center;
-}
 
-.miniLogo img{
-    margin-top: auto;
-        
+    to{
+        text-shadow: none;
+    }
 }
 
 
-button{
-    justify-content: center;
-    display: flex;  
-}
+/************************************** Debut navbar ***********************************/
 
 .campus{
-    padding-top: 10px;
-    width: 80%;
-}
-                
-.logo {
-    text-align: center;
-    border : black , 5px ;
+    animation: flash infinite;
+    animation-duration: 5s;
+    animation-delay: 2s;
+    font-size: 50px;
+    position: relative;
+    transform: rotate(-6deg);
+    bottom: 8px;
+    left: 10px;
+    color: #60aeb6;
 }
 
+.sacre{
+    font-size: 50px;
+    position: relative;
+    top: 5px;
+    left: 10px;
+    color: #f0f3f4;
+    text-shadow: 4px 4px 2px rgba(146, 150, 150, 1);
+}
 
-nav a {
-    color : white ;
-    font-family: "Spicyburger", serif;
-    font-size: 3em ;
-    font-weight : bold ;
-    padding: 0.5em;  
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 15px;
+    box-shadow: 0 4px 4px 0 rgba(0,0,0,0.5);
+}
+
+.nav-link-left, .nav-link-right{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.nav-link-left a, .nav-link-right a{
     text-decoration: none;
+    font-size: 25px;
+    text-align: center;
+    padding: 14px 25px;
+    font-weight: bold;
 }
 
+/************************************** Fin navbar ***********************************/
 
-
+.photo{
+    display: flex;
+}
 
 /************************************** Debut Title ***********************************/
 
 h1, h2{
     display: flex;
     justify-content: center;
+}
+
+.container-manger h1, .container-divertir h1, .container-informer h1, .container-utiles h1{
+    font-size: 60px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.container-manger h2, .container-divertir h2, .container-informer h2, .container-utiles h2{
+    font-size: 30px;
 }
 
 /************************************** Fin Title ***********************************/
@@ -137,7 +108,7 @@ h1, h2{
     display: flex;
     justify-content: space-around;
     margin-top:20px;
-    margin-bottom: 20px;
+    margin-bottom: 60px;
 }
 
 .card{
@@ -149,15 +120,17 @@ h1, h2{
 }
 
 .card:hover{
-    transform: scale(1.1);
+    transform: scale(1.05);
     transition: .3s ease-in-out;
 }
 
 button{
     width: 100%;
-    background-color: white;
+    background-color: #007e8a;
     border-style: none;
-    border-radius: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
 }
 
 /************************************ Fin Card *******************************/
@@ -191,7 +164,7 @@ button{
     max-height: 599px;
     width: 59%;
     height: 80%;
-    background-color: #F47474;
+    background-color: #007e8a;
     transform: rotate(32deg);
     transition: 0.74s ease-in-out;
 }
@@ -251,19 +224,16 @@ button{
 /************************************ Debut footer ***************************/
 
 footer{
-    background-color: black;
+    background-color: #007e8a;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
-.other{
-    color: white;
-    display: inline;
-    margin-left: 10%;
-}
 
-footer a, p{
+.description a{
     text-decoration: none;
     color: white;
-    display: inline;
 }
 
 /************************************ Fin footer ***************************/
@@ -279,17 +249,13 @@ footer a, p{
     text-align: center;
     line-height: 40px;
     color: white;
-    font-size: 22px;
+    font-size: 18px;
+    border-radius: 5px;
 }
 
 
 
 @media screen and (max-width: 640px){
-
-    .menu {
-        display:flex;
-        flex-direction: column;
-    }
 
     .container-rapide, .container-boulangerie, .container-restaurant, .container-bar, .container-cinema, .container-salledesport, .container-meetup, .container-hackathon, .container-pharmacie, .container-parking{
         display: flex;
@@ -297,23 +263,45 @@ footer a, p{
     }
 
     .card{
-        width: 60%;
         margin: auto;
         margin-bottom: 15px;
+    }
+
+    .photo{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 900px){
+    
+    .nav-link-left a, .nav-link-right a{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .navbar{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-bottom: 200px;
+    }
+
+    .logo{
+        order: 1;
+    }
+
+    .nav-link-left, .nav-link-right{
+        order: 2;
+        display: flex;
+        flex-direction: column;
     }
 }
 
 @media screen and (min-width: 1024px){
 
     button{
-        justify-content: center;
         display: flex;
-    }
-}
-
-@media(max-width: 900px) {
-    .menu a{
-        font-size: xx-large;
-        margin-top: 15px;
+        justify-content: center;
     }
 }
