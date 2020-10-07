@@ -10,6 +10,7 @@ body{
     background-color: #ffeae4;
 }
 
+
 @font-face{
     font-family: font;
     src: url(./font/Champagne\ &\ Limousines.ttf);
@@ -40,7 +41,7 @@ body{
     position: relative;
     transform: rotate(-6deg);
     bottom: 8px;
-    left: 10px;
+    left: 5px;
     color: #60aeb6;
 }
 
@@ -48,7 +49,6 @@ body{
     font-size: 50px;
     position: relative;
     top: 5px;
-    left: 10px;
     color: #f0f3f4;
     text-shadow: 4px 4px 2px rgba(146, 150, 150, 1);
 }
@@ -76,10 +76,33 @@ body{
     font-weight: bold;
 }
 
+.logo{
+    text-align: center;
+}
+
 /************************************** Fin navbar ***********************************/
 
-.photo{
+.intro{
     display: flex;
+}
+
+.text{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: white;
+}
+
+.text h2{
+    font-size: 40px;
+    color: black;
+    text-align: center;
+}
+
+.text p{
+    color: black;
+    font-size: 25px;
+    text-align: center;
 }
 
 /************************************** Debut Title ***********************************/
@@ -117,6 +140,16 @@ h1, h2{
     box-shadow: -15px -15px 15px rgba(255,255,255,0.5);
     box-shadow: 15px 15px 15px rgba(0,0,0,0.3);
     transition: .3s ease-in-out;
+    max-width: 80%;
+    align-self: center;
+}
+
+.card img{
+    width: 100%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
 }
 
 .card:hover{
@@ -181,12 +214,12 @@ button{
 .popup-text h1{
     margin-bottom: 2rem;
     text-transform: uppercase;
-    color: #0a0a0a;
+    color: white;
 }
 
 .popup-text p{
+    color: white;
     font-size: 20px;
-    color: black;
     line-height: 1.5;
 }
 
@@ -263,13 +296,11 @@ footer{
     }
 
     .card{
-        margin: auto;
         margin-bottom: 15px;
     }
 
-    .photo{
-        display: flex;
-        flex-direction: column;
+    .reims{
+        height: 500px;
     }
 }
 
@@ -284,7 +315,7 @@ footer{
         display: flex;
         flex-direction: column;
         justify-content: center;
-        margin-bottom: 200px;
+        margin-bottom: 40px;
     }
 
     .logo{
@@ -296,6 +327,15 @@ footer{
         display: flex;
         flex-direction: column;
     }
+
+    .intro{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .text h2{
+        margin-bottom: 40px;
+    }
 }
 
 @media screen and (min-width: 1024px){
@@ -305,3 +345,5 @@ footer{
         justify-content: center;
     }
 }
+
+

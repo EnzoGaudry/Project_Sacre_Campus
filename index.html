@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="./script.js"></script>
 </head>
 <body>
     
@@ -22,11 +23,20 @@
             <li><a href="#informer">S'informer</a></li>
             <li><a href="#utiles">Lieux Utiles</a></li> 
         </ul>
+        <div>
+            
+        </div>
     </nav>
 
-    <div class="photo">
-        <img src="./picture/Reims3.png" alt="">
-        <img src="./picture/Reims2.png" alt="">
+    <div class="intro">
+        <div class="text">
+            <h2>LES BONNES ADRESSES SUR REIMS</h2>
+            <p>Découvrez toutes les adresses utiles a proximite de Quartier Libre, le Quartier General des Wilders.<br>
+                Toutes les astuces pour manger, sur le pouce ou non et trouver des endroits pour boire un verre et se divertir.<br>
+                Et enfin, des endroits utiles pour etendre vos connaissances et votre reseau professionnel.
+            </p>
+        </div>
+        <img src="./picture/Reims2.png" alt="" class="reims">
     </div>
     <!---------------------------------------------- Debut container manger ------------------------------>
 
@@ -36,16 +46,14 @@
             <!---------------------------------------------- Debut container rapide ------------------------------>
             <h2>Restaurant rapide</h2>
             <div class="container-rapide">
-                <div class="card">
-                    <img src="./picture/lefast.jpg" alt="Fast">
+                <div class="card test">
+                    <img src="./picture/lefast.jpg" alt="">
                     <form action="#fast">
                         <button type="submit">Le Fast<br>Plus d'infos</button>
                     </form>
                 </div>
                 <div class="card">
-                    <div class="img">
-                        <img src="./picture/subway.jpg" alt="">
-                    </div>
+                    <img src="./picture/subway.jpg" alt="">
                     <form action="#subway">
                         <button type="submit">Subway <br> Plus d'infos</button>
                     </form>
@@ -83,7 +91,7 @@
             <h2>Restaurant</h2>
             <div class="container-restaurant">
                 <div class="card">
-                        <img src="./picture/tablier.jpg" alt="le tablier">
+                    <img src="./picture/tablier.jpg" alt="le tablier">
                     <form action="#tablier">
                         <button type="submit">Le Tablier  <br> Plus d'infos</button>
                     </form>
@@ -141,7 +149,7 @@
         <h1>Se divertir</h1>
         <div class="container-card-divertir">
             <!---------------------------------------------- Debut container bar ------------------------------>
-            <h2>Bar</h2>
+            <h2>Bars</h2>
             <div class="container-bar">
                 <div class="card">
                     <img src="./picture/229.jpg" alt="">
@@ -203,20 +211,16 @@
                 </div>
             </div>
             <!---------------------------------------------- Debut container cinema ------------------------------>
-            <h2>Cinema</h2>
+            <h2>Spectacles</h2>
             <div class="container-cinema">
                 <div class="card">
-                    <div class="img">
-                        <img src="./picture/cinema.jpg" alt="">
-                    </div>
+                    <img src="./picture/cinema.jpg" alt="">
                     <form action="#gaumont">
                         <button type="submit">Gaumont <br> Plus d'infos</button>
                     </form>
                 </div>
                 <div class="card">
-                    <div class="img">
-                        <img src="./picture/opera.jpg" alt="">
-                    </div>
+                    <img src="./picture/opera.jpg" alt="">
                     <form action="#opera">
                         <button type="submit">Opera <br> Plus d'infos</button>
                     </form>
@@ -226,17 +230,13 @@
             <h2>Salle de sport</h2>
             <div class="container-salledesport">
                 <div class="card">
-                    <div class="img">
-                        <img src="./picture/espace-club.jpg" alt="">
-                    </div>
+                    <img src="./picture/espace-club.jpg" alt="">
                     <form action="#espaceclub">
                         <button type="submit">Espace Club <br> Plus d'infos</button>
                     </form>
                 </div>
                 <div class="card">
-                    <div class="img">
-                        <img src="./picture/gts-reims.png" alt="">
-                    </div>
+                    <img src="./picture/gts-reims.png" alt="">
                     <form action="#gts">
                         <button type="submit">GTS Reims <br> Plus d'infos</button>
                     </form>
@@ -256,17 +256,13 @@
             <h2>Meetup</h2>
             <div class="container-meetup">
                 <div class="card">
-                    <div class="img">
-                        <img src="./picture/JSdon'tpanic.png" alt="">
-                    </div>
+                    <img src="./picture/JSdon'tpanic.png" alt="">
                     <form action="#js">
                         <button type="submit">JS Don't Panic <br> Plus d'infos</button>
                     </form>
                 </div>
                 <div class="card">
-                    <div class="img">
-                        <img src="./picture/Sacrétech.png" alt="">
-                    </div>
+                    <img src="./picture/Sacrétech.png" alt="">
                     <form action="#sacreetech">
                         <button type="submit">Sacree Tech <br> Plus d'infos</button>
                     </form>
@@ -350,9 +346,9 @@
             <div class="popup-text">
                 <h1>Le Fast</h1>
                 <p> 
-                    Adresse : 49 Rue De Courcelles, 51100, Reims </br>
-                    Numéro :  03 26 02 02 94 </br>
-                    Site Web : https://www.facebook.com/RestaurantLeFast/ </br>
+                    Adresse : 49 Rue De Courcelles, 51100, Reims <br>
+                    Numéro :  03 26 02 02 94 <br>
+                    Site Web : https://www.facebook.com/RestaurantLeFast/ <br>
                 </p>
             </div>
         </div>
@@ -364,8 +360,8 @@
             <div class="popup-text">
                 <h1>Subway</h1>
                 <p>
-                    Adresse: 63 Place Drouet d'Erlon</br>
-                    Numéro : 03 26 82 64 43</br>
+                    Adresse: 63 Place Drouet d'Erlon<br>
+                    Numéro : 03 26 82 64 43<br>
                     Site Web : subway.com
                 </p>
             </div>
@@ -378,8 +374,8 @@
             <div class="popup-text">
                 <h1>McDo</h1>
                 <p>
-                    Adresse: Rue de Talleyrand 2-4</br>
-                    Numéro : 03 26 88 94 94</br>
+                    Adresse: Rue de Talleyrand 2-4<br>
+                    Numéro : 03 26 88 94 94<br>
                     Site Web :
                 </p>
             </div>
@@ -392,8 +388,8 @@
             <div class="popup-text">
                 <h1>Boulangerie de la Gare</h1>
                 <p>
-                    Adresse: </br>
-                    Numéro : </br>
+                    Adresse: <br>
+                    Numéro : <br>
                     Site Web :
                 </p>
             </div>
@@ -406,8 +402,8 @@
             <div class="popup-text">
                 <h1>Waida et Fils</h1>
                 <p>
-                    Adresse: </br>
-                    Numéro : </br>
+                    Adresse: <br>
+                    Numéro : <br>
                     Site Web :
                 </p>
             </div>
@@ -420,8 +416,8 @@
             <div class="popup-text">
                 <h1>Fischer</h1>
                 <p>
-                    Adresse: </br>
-                    Numéro : </br>
+                    Adresse: <br>
+                    Numéro : <br>
                     Site Web :
                 </p>
             </div>
@@ -434,8 +430,8 @@
             <div class="popup-text">
                 <h1>Sacre Burger</h1>
                 <p>
-                    Adresse: </br>
-                    Numéro : </br>
+                    Adresse: <br>
+                    Numéro : <br>
                     Site Web :
                     
                 </p>
@@ -449,8 +445,8 @@
             <div class="popup-text">
                 <h1>231 East</h1>
                 <p>
-                    Adresse: </br>
-                    Numéro : </br>
+                    Adresse: <br>
+                    Numéro : <br>
                     Site Web :
                 </p>
             </div>
@@ -463,8 +459,8 @@
             <div class="popup-text">
                 <h1>Shin Zen</h1>
                 <p>
-                    Adresse: </br>
-                    Numéro : </br>
+                    Adresse: <br>
+                    Numéro : <br>
                     Site Web :
                 </p>
             </div>
@@ -477,8 +473,8 @@
             <div class="popup-text">
                 <h1>CookHouse</h1>
                 <p>
-                    Adresse: 79 Place Drouet d'Erlon </br>
-                    Numéro : 03 26 35 64 32</br>
+                    Adresse: 79 Place Drouet d'Erlon <br>
+                    Numéro : 03 26 35 64 32<br>
                    
                 </p>
             </div>
@@ -491,8 +487,8 @@
             <div class="popup-text">
                 <h1>Koboon</h1>
                 <p>
-                    Adresse: 9 Boulevard du Général Leclerc REIMS</br>
-                    Numéro : 09 88 00 74 14 </br>
+                    Adresse: 9 Boulevard du Général Leclerc REIMS<br>
+                    Numéro : 09 88 00 74 14 <br>
                     Site Web :
                 </p>
             </div>
@@ -505,8 +501,8 @@
             <div class="popup-text">
                 <h1>Ronroncafe</h1>
                 <p>
-                    Adresse: </br>
-                    Numéro : </br>
+                    Adresse: <br>
+                    Numéro : <br>
                     Site Web :
                 </p>
             </div>
@@ -519,8 +515,8 @@
             <div class="popup-text">
                 <h1>229 Bar Gaming</h1>
                 <p>
-                    Adresse: </br>
-                    Numéro : </br>
+                    Adresse: <br>
+                    Numéro : <br>
                     Site Web :
                 </p>
             </div>
@@ -533,8 +529,8 @@
             <div class="popup-text">
                 <h1>Kileberry</h1>
                 <p>
-                    Adresse: </br>
-                    Numéro : </br>
+                    Adresse: <br>
+                    Numéro : <br>
                     Site Web :
                 </p>
             </div>
@@ -547,8 +543,8 @@
             <div class="popup-text">
                 <h1>Triangle Sweet Corner</h1>
                 <p>
-                    Adresse: </br>
-                    Numéro : </br>
+                    Adresse: <br>
+                    Numéro : <br>
                     Site Web :
                 </p>
             </div>
@@ -561,8 +557,8 @@
             <div class="popup-text">
                 <h1>Au Fut et a Mesure</h1>
                 <p>
-                    Adresse: </br>
-                    Numéro : </br>
+                    Adresse: <br>
+                    Numéro : <br>
                     Site Web :
                 </p>
             </div>
@@ -575,8 +571,8 @@
             <div class="popup-text">
                 <h1>L'antirouille</h1>
                 <p>
-                    Adresse: </br>
-                    Numéro : </br>
+                    Adresse: <br>
+                    Numéro : <br>
                     Site Web :
                 </p>
             </div>
@@ -589,8 +585,8 @@
             <div class="popup-text">
                 <h1>Torboyo</h1>
                 <p>
-                    Adresse: </br>
-                    Numéro : </br>
+                    Adresse: <br>
+                    Numéro : <br>
                     Site Web :
                 </p>
             </div>
@@ -603,8 +599,8 @@
             <div class="popup-text">
                 <h1>The Market Brewhouse</h1>
                 <p>
-                    Adresse: </br>
-                    Numéro : </br>
+                    Adresse: <br>
+                    Numéro : <br>
                     Site Web :
                 </p>
             </div>
@@ -617,8 +613,8 @@
             <div class="popup-text">
                 <h1>Delirium Cafe</h1>
                 <p>
-                    Adresse: </br>
-                    Numéro : </br>
+                    Adresse: <br>
+                    Numéro : <br>
                     Site Web :
                 </p>
             </div>
@@ -631,8 +627,8 @@
             <div class="popup-text">
                 <h1>Musikall Bar Karaoke Box</h1>
                 <p>
-                    Adresse: </br>
-                    Numéro : </br>
+                    Adresse: <br>
+                    Numéro : <br>
                     Site Web :
                 </p>
             </div>
@@ -645,8 +641,8 @@
             <div class="popup-text">
                 <h1>Gaumont</h1>
                 <p>
-                    Adresse: </br>
-                    Numéro : </br>
+                    Adresse: <br>
+                    Numéro : <br>
                     Site Web :
                 </p>
             </div>
@@ -659,8 +655,8 @@
             <div class="popup-text">
                 <h1>Opera</h1>
                 <p>
-                    Adresse: </br>
-                    Numéro : </br>
+                    Adresse: <br>
+                    Numéro : <br>
                     Site Web :
                 </p>
             </div>
@@ -673,8 +669,8 @@
             <div class="popup-text">
                 <h1>Espace Club</h1>
                 <p>
-                    Adresse: </br>
-                    Numéro : </br>
+                    Adresse: <br>
+                    Numéro : <br>
                     Site Web :
                 </p>
             </div>
@@ -687,8 +683,8 @@
             <div class="popup-text">
                 <h1>GTS Reims</h1>
                 <p>
-                    Adresse: </br>
-                    Numéro : </br>
+                    Adresse: <br>
+                    Numéro : <br>
                     Site Web :
                 </p>
             </div>
@@ -701,8 +697,8 @@
             <div class="popup-text">
                 <h1>JS Don't Panic</h1>
                 <p>
-                    Adresse: </br>
-                    Numéro : </br>
+                    Adresse: <br>
+                    Numéro : <br>
                     Site Web :
                 </p>
             </div>
@@ -715,8 +711,8 @@
             <div class="popup-text">
                 <h1>Saint-Ex</h1>
                 <p>
-                    Adresse: </br>
-                    Numéro : </br>
+                    Adresse: <br>
+                    Numéro : <br>
                     Site Web :
                 </p>
             </div>
@@ -729,8 +725,8 @@
             <div class="popup-text">
                 <h1>Sacree Tech</h1>
                 <p>
-                    Adresse: </br>
-                    Numéro : </br>
+                    Adresse: <br>
+                    Numéro : <br>
                     Site Web :
                 </p>
             </div>
@@ -743,8 +739,8 @@
             <div class="popup-text">
                 <h1></h1>
                 <p>
-                    Adresse: </br>
-                    Numéro : </br>
+                    Adresse: <br>
+                    Numéro : <br>
                     Site Web :
                 </p>
             </div>
@@ -757,8 +753,8 @@
             <div class="popup-text">
                 <h1>Le Fast</h1>
                 <p>
-                    Adresse: </br>
-                    Numéro : </br>
+                    Adresse: <br>
+                    Numéro : <br>
                     Site Web :
                 </p>
             </div>
@@ -771,8 +767,8 @@
             <div class="popup-text">
                 <h1>Le Fast</h1>
                 <p>
-                    Adresse: </br>
-                    Numéro : </br>
+                    Adresse: <br>
+                    Numéro : <br>
                     Site Web :
                 </p>
             </div>
@@ -785,8 +781,8 @@
             <div class="popup-text">
                 <h1>Le Fast</h1>
                 <p>
-                    Adresse: </br>
-                    Numéro : </br>
+                    Adresse: <br>
+                    Numéro : <br>
                     Site Web :
                 </p>
             </div>
@@ -799,8 +795,8 @@
             <div class="popup-text">
                 <h1>Le Fast</h1>
                 <p>
-                    Adresse: </br>
-                    Numéro : </br>
+                    Adresse: <br>
+                    Numéro : <br>
                     Site Web :
                 </p>
             </div>
@@ -813,8 +809,8 @@
             <div class="popup-text">
                 <h1>Pharmacie Godfroy</h1>
                 <p>
-                    Adresse:137 Rue de Courcelles, 51100 Reims </br>
-                    Numéro : 03 26 47 26 40 </br>
+                    Adresse:137 Rue de Courcelles, 51100 Reims <br>
+                    Numéro : 03 26 47 26 40 <br>
                     Site Web : https://www.pharmacie-godfroy-reims.fr/
                 </p>
             </div>
