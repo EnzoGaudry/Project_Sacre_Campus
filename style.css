@@ -220,6 +220,12 @@ button{
     text-transform: uppercase;
     color: white;
 }
+.popup-text a{
+    margin-bottom: 2rem;
+    text-transform:uppercase;
+    font-size: 30px;
+    color: white;
+}
 
 .popup-text p{
     color: white;
