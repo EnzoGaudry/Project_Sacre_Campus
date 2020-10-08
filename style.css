@@ -80,6 +80,10 @@ body{
     text-align: center;
 }
 
+.reims{
+    height: 600px;
+}
+
 /************************************** Fin navbar ***********************************/
 
 .intro{
@@ -101,7 +105,7 @@ body{
 
 .text p{
     color: black;
-    font-size: 25px;
+    font-size: 30px;
     text-align: center;
 }
 
@@ -308,9 +312,10 @@ footer{
         margin-bottom: 15px;
     }
 
-    .reims{
-        height: 500px;
+    .back-to-top{
+        display: none;
     }
+
 }
 
 @media screen and (max-width: 900px){
@@ -345,6 +350,7 @@ footer{
     .text h2{
         margin-bottom: 40px;
     }
+
 }
 
 @media screen and (min-width: 1024px){
