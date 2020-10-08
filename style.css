@@ -206,6 +206,7 @@ button{
     transition: 0.74s ease-in-out;
 }
 
+
 .popup-text{
     display: flex;
     text-align: center;
@@ -213,6 +214,13 @@ button{
     justify-content: center;
     flex-direction: column;
     justify-content: space-between;
+    
+}
+
+.popup-text a { 
+    color :#0000FF ;
+    text-decoration: none;
+    font-weight:bold;
 }
 
 .popup-text h1{
