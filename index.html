@@ -17,18 +17,32 @@
             <h3 class="sacre">SACRÉ</h3>
             <h3 class="campus">CAMPUS</h3>
         </div>
-        <ul class="nav-link-left">
+        <ul class="nav-link">
             <li><a href="#manger">Se Restaurer</a></li>
             <li><a href="#divertir">Se Divertir</a></li>
+            <li><a href="#informer">se rencontrer</a></li>
+            <li><a href="#utiles">Lieux Utiles</a></li>
+            <li><a href="#formulaire">Ton adresse</a></li>
         </ul>
-        <ul class="nav-link-right">
-            <li><a href="#informer">S'informer</a></li>
-            <li><a href="#utiles">Lieux Utiles</a></li> 
-        </ul>
-        <div>
-            
-        </div>
     </nav>
+
+    <div class="popup" id="formulaire">
+        <div class="popup-inner">
+            <a class="popup-close" href="#">X</a>
+            <div class="popup-text">
+                <h1>Ajoute ton adresse</h1>
+                <form action="https://formspree.io/f/mzbkdjyz" method="POST">
+                    <label for="email">Email:</label>
+                    <input id="email" type="text" name="email" required="">
+                    <label for="nom">Nom de l'adresse:</label>
+                    <input id="nom" type="text" name="nom" required="">
+                    <label for="adresse">L'adresse:</label>
+                    <input id="adresse" type="text" name="adresse" required="">
+                    <button type="submit">Soumettre</button>
+                  </form>
+            </div>
+        </div>
+    </div>
 
     <div class="intro">
         <div class="text">
@@ -945,7 +959,7 @@
 
 
     <footer class="description">
-        <h3 class="site">Site par : </h3>
+        <h3 class="site">Réaliser par : </h3>
         <a href="https://www.linkedin.com/in/olivier-preaux-b492b31b8/">Olivier</a>
         <a href="https://www.linkedin.com/in/adrien-thouvenin/">Adrien</a>
         <a href="https://www.linkedin.com/in/enzogaudry/">Enzo</a>
