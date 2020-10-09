@@ -22,7 +22,7 @@
             <li><a href="#divertir">Se Divertir</a></li>
             <li><a href="#informer">se rencontrer</a></li>
             <li><a href="#utiles">Lieux Utiles</a></li>
-            <li><a href="#formulaire">Ton adresse</a></li>
+            <li><a href="#formulaire">Inscrire mon établissement</a></li>
         </ul>
     </nav>
 
@@ -30,13 +30,13 @@
         <div class="popup-inner">
             <a class="popup-close" href="#">X</a>
             <div class="popup-text">
-                <h1>Ajoute ton adresse</h1>
+                <h1>Ajouté votre établissement</h1>
                 <form action="https://formspree.io/f/mzbkdjyz" method="POST">
                     <label for="email">Email:</label>
                     <input id="email" type="text" name="email" required="">
-                    <label for="nom">Nom de l'adresse:</label>
+                    <label for="nom">Nom de l'établissement :</label>
                     <input id="nom" type="text" name="nom" required="">
-                    <label for="adresse">L'adresse:</label>
+                    <label for="adresse">Adresse de l'établissement :</label>
                     <input id="adresse" type="text" name="adresse" required="">
                     <button type="submit">Soumettre</button>
                   </form>
@@ -318,6 +318,28 @@
         <h1>Lieux utiles</h1>
         <div class="container-card-utiles">
             <!---------------------------------------------- Debut container informer ------------------------------>
+            <h2>Quartier-Libre</h2>
+            <div class="container-petite-halle">
+                <div class="card">
+                    <img src="./picture/petite-halle.jpg" alt="">
+                    <form action="#petitehalle">
+                        <button type="submit">Petite-Halle <br> Plus d'infos</button>
+                    </form>
+                </div>
+            
+                <div class="card">
+                    <img src="./picture/quartierlibre.png" alt="">
+                    <form action="#quartier">
+                        <button type="submit">Quartier Libre <br> Plus d'infos</button>
+                    </form>
+                </div>
+                <div class="card">
+                    <img src="./picture/wild.png" alt="">
+                    <form action="#wild">
+                        <button type="submit">Wild Code School <br> Plus d'infos</button>
+                    </form>
+                </div>
+            </div>
             <h2>Parking Gratuit</h2>
             <div class="container-parking">
                 <div class="card">
@@ -340,29 +362,6 @@
                     <img src="./picture/pharmacie_godfroy.jpg" alt="">
                     <form action="#pharmacie">
                         <button type="submit">Pharmacie Godfroy <br> Plus d'infos</button>
-                    </form>
-                </div>
-            </div>
-              <!--------------------------------------------------------Debut container Petite Halle----------------------------->
-            <h2>Quartier-Libre</h2>
-            <div class="container-petite-halle">
-                <div class="card">
-                    <img src="./picture/petite-halle.jpg" alt="">
-                    <form action="#petitehalle">
-                        <button type="submit">Petite-Halle <br> Plus d'infos</button>
-                    </form>
-                </div>
-            
-                <div class="card">
-                    <img src="./picture/quartierlibre.png" alt="">
-                    <form action="#quartier">
-                        <button type="submit">Quartier Libre <br> Plus d'infos</button>
-                    </form>
-                </div>
-                <div class="card">
-                    <img src="./picture/wild.png" alt="">
-                    <form action="#wild">
-                        <button type="submit">Wild Code School <br> Plus d'infos</button>
                     </form>
                 </div>
             </div>
