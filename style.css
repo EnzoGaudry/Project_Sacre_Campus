@@ -290,7 +290,6 @@ button{
 .selection{
     display: flex;
     flex-direction: column;
-    height: 100%;
 }
 
 .popup:target{
